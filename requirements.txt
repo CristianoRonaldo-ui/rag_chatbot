@@ -1,0 +1,7 @@
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-openai
+faiss-cpu
+unstructured[pdf,docx,pptx]
+python-dotenv
