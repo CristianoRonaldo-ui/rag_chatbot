@@ -7,7 +7,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers questions **only** f
 1. **Load** – `DirectoryLoader` + `UnstructuredFileLoader` read every PDF in `papers/`.
 2. **Split** – `RecursiveCharacterTextSplitter` cuts documents into ~1200-character chunks (200 overlap), preferring natural boundaries like headings and paragraphs.
 3. **Embed & index** – each chunk is turned into a vector with OpenAI embeddings and stored in a FAISS index (cosine distance).
-4. **Retrieve** – for each question, the top 5 most relevant chunks above a relevance threshold are retrieved.
+4. **Retrieve** – for each question, the 5 chunks most similar to it (by cosine similarity) are retrieved.
 5. **Generate** – `gpt-5-mini` answers using only the retrieved context, following a strict prompt:
    - answer from the provided context only
    - say *"I don't know based on the provided documents."* if the answer is not there
