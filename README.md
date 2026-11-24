@@ -65,7 +65,3 @@ The two papers in `papers/` are short synthetic studies used as demo data:
 
 - *When Does the Bootstrap Help?* – confidence-interval coverage under small samples and skewness
 - *Memorize or Average?* – how symmetric label noise affects seven standard classifiers
-
-## Acknowledgements
-
-Based on the tutorial ["Hướng dẫn xây dựng RAG chatbot từ A-Z"](https://www.youtube.com/watch?v=_F7Gnmk5Ta4) by Việt Nguyễn AI.
